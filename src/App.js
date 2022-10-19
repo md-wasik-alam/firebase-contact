@@ -1,17 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Create from './components/Create';
-import List from './components/List';
+import Form from './components/Form';
+import Header from './components/Header';
+import Table from './components/Table';
+
+
 
 function App() {
+
+
+ 
+
+
   return (
-    <div className='flex justify-center'>
-      <div className="w-1/2 bg-gray-200 h-screen">
-        <Create />
-        <List />
-      </div>
+    <>
+      <Header />
+      <div className='flex bg-gray-50 '>
+        <div className='w-2/5'>
+          <Form />
+        </div>
+        <div className='w-full'>
+            <Table/>
+        </div>
 
     </div>
+      </>
   );
 }
 
